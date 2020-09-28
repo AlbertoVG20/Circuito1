@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main ()
+{
+    float V;
+    int R1,R2,R3,RT;
+    float I;
+    printf( "Escribe el valor de la fuente en volts: ");
+    scanf("%f",&V);
+
+    printf("Resistencia 1: ");
+    scanf("%d",&R1);
+    printf("Resistencia 2: ");
+    scanf("%d",&R2);
+    printf("Resistencia 3: ");
+    scanf("%d",&R3);
+
+    RT=(V/I);
+    I=((V/R1)+(V/R2)+(V/R3));
+    printf("La corriente total es: %.2fAmpers\n",I);
+    printf("La resistencia total es: %.2fOhms\n",RT);
+return 0;
+
+}
