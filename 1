@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main ()
+
+{
+    float LedRojostd;
+    float ResLedRojostd;
+    float VLedRojostd;
+    float ILedRojostd;
+    float VR2;
+
+
+    VLedVerde=3;
+    ILedVerde=0.02;
+    VLedAzul=3;
+    ILedAzul=0.02;
+
+    VLedRojostd= 1.5;
+    ILedRojostd= 0.015;
+
+    printf("Ingrese el voltaje de alimentacion en volts: \n");
+    scanf("%f",&Vin);
+    printf("Voltaje de alimentacion= %f\n",Vin);
+
+    VR= Vin-VLedAzul;
+    ResLedAzul= VR/ILedAzul;
+
+    printf("Resistencia del led azul= %f\n",ResLedAzul);
+
+    printf("Voltaje de alimentacion= %f\n",Vin);
+
+    VR1= Vin-VLedVerde;
+    ResLedVerde= VR1/ILedVerde;
+
+    printf("Resistencia del led verde= %f\n",ResLedVerde);
+
+    print("Voltaje de alimentacion= %f\n",Vin);
+    VR2= Vin-VLedRojostd;
+    ResLedRojostd= VR2/ILedRojostd;
+
+    printf("Resistencia del led rojo= %f\n",ResLedRojostd);
+
+    return 0;
+}
