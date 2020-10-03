@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+ float a,b,c,x1,x2,r1;
+ printf("ingresa los valores de a:");
+  scanf("%f",&a);
+
+ printf("ingresa los valores de b:");
+ fflush( stdin );
+  scanf("%f",&b);
+
+ printf("ingresa los valores de c:");
+ fflush( stdin );
+  scanf("%f",&c);
+
+r1=pow(b,2)-4*a*c;
+x1=((-b+sqrt(r1))/(2*a));
+x2=((-b-sqrt(r1))/(2*a));
+
+ printf("El resultado de x1 es\a %0.2f",x1);
+ printf("El resultado de x2 es\a %0.2f",x2);
+}
