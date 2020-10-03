@@ -1,0 +1,92 @@
+#include <stdio.h>
+
+main()
+{
+    char  V1,V2,V3;
+    float c1,c2,c3,prom;
+
+    printf("Ingresa la calificacion 1:");
+    scanf("%c",&V1);
+
+    printf("Ingresa la calificacion 2:");
+    fflush( stdin );
+    scanf("%c",&V2);
+
+    printf("Ingresa la calificacion 3:");
+    fflush( stdin );
+    scanf("%c",&V3);
+
+
+
+if (V1=='A')
+       c1=0+10;
+
+    else if (V1=='B')
+        c1=0+9;
+
+    else if (V1=='C')
+        c1=0+8;
+
+    else if (V1=='D')
+        c1=0+7;
+
+    else if (V1=='E')
+        c1=0+6;
+
+    else if (V1=='F')
+        c1=0+5;
+        else
+        {
+            printf("Calificacion reprobatoria\n");
+        }
+
+if (V2=='A')
+       c2=0+10;
+
+
+    else if (V2=='B')
+        c2=0+9;
+
+   else if (V2=='C')
+        c2=0+8;
+
+   else if (V2=='D')
+        c2=0+7;
+
+   else if (V2=='E')
+        c2=0+6;
+
+   else if (V2=='F')
+        c2=0+5;
+         else
+         {
+             printf("Calificacion reprobatoria\n");
+         }
+if (V3=='A')
+       c3=0+10;
+
+   else if (V3=='B')
+        c3=0+9;
+
+   else if (V3=='C')
+        c3=0+8;
+
+   else if (V3=='D')
+        c3=0+7;
+
+   else if (V3=='E')
+        c3=0+6;
+
+   else if (V3=='F')
+        c3=0+5;
+   else
+   {
+       printf("Calificacion reprobatoria\n");
+   }
+
+      prom=(c1+c2+c3)/3;
+
+{
+printf ("Tu promedio es:%.2f\n", prom);
+}
+}
