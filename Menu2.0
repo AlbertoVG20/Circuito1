@@ -1,0 +1,165 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+int eleccion;
+    printf ("Elige alguna de las siguientes opciones\n");
+
+    while (eleccion !=4)
+{
+    printf("\n1. Triangulos con asteriscos");
+    printf("\n2. Calcular PI");
+    printf("\n3. Series");
+    printf("\n4. Salir \n");
+    scanf("%d",&eleccion);
+
+if(eleccion==1)
+{
+    int a,b,c;
+    printf ("A)\n");
+
+    for (a=1;a<=10;a++)
+    {
+        for (c=1;c<=a;c++)
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+    printf ("B)\n");
+
+
+    for (a=1;a<=10;a++)
+    {
+        for (c=a;c<=10;c++)
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+    printf ("C)\n");
+
+
+    for (a=1;a<=10;a++)
+    {
+        for (b=2;b<=a;b++)
+        {
+            printf (" ");
+        }
+        for (c=10;c>=a;c--)
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+    printf ("D)\n");
+
+
+    for (a=1;a<=10;a++)
+    {
+        for (b=9;b>=a;b--)
+        {
+            printf(" ");
+        }
+        for (c=1;c<=a;c++)
+        {
+            printf("*");
+        }
+        printf ("\n");
+    }
+}
+
+
+    else if(eleccion==2)
+{
+
+    int i, f, j = 1;
+    double pi = 0, spi;
+    printf("Ingrese la cantidad de valores: ");
+    scanf("%d",&f);
+
+
+        for (i=0;i<f;i++)
+        {
+          spi=4/(double)j;
+               if (i % 2 == 1)
+               {
+                  pi-=spi;
+               }
+               else
+               {
+                   pi+=spi;
+               }
+          j += 2;
+        }
+    printf("Pi= %.16f", pi);
+
+}
+
+    else if(eleccion==3)
+{
+
+    int Z, B, E, T, O;
+        printf ("Ingresa el valor de N:\n");
+        scanf ("%d",&Z);
+         B=1;
+          E=1;
+           T=1;
+            O=1;
+    printf ("\nSerie 1:\n");
+    while (B<=Z)
+    {
+        int n=-1;
+        for (B=1;B<=Z;B++)
+        {
+            n=n+2;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nSerie 2:\n");
+    while (E<=Z)
+    {
+        int n=0;
+        for (E=1;E<=Z;E++)
+        {
+            n=n+3;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nSerie 3:\n");
+    while (T<=Z)
+    {
+        int n=40;
+        for (T=1;T<=Z;T++)
+        {
+            n=n-10;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nSerie 4:\n");
+    while (O<=Z)
+    {
+        int n=7;
+        for (O=1;O<=Z;O++)
+        {
+            n=n+8;
+            printf ("%d, ",n);
+        }
+    }
+ }
+    else if(eleccion==4)
+{
+    printf("Ha decidido salir, que tenga buen dia\n");
+    return 0;
+  }
+
+    else if (eleccion >= 5) {
+    printf("Por favor, eliga una opcion valida\n");
+  }
+    else if (eleccion <= 0) {
+    printf("Por favor, eliga una opcion valida\n");
+  }
+
+  };
+}
